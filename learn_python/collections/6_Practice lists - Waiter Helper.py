@@ -33,9 +33,9 @@ print(f"Your starters choices are: {desserts_list}")
 user_dessert_choice = input("What would you like for your dessert? ")
 
 # Print all of the user's choices
-print(f"So you've gone for the {user_starters_choice} as your starter \n"
-      f"Then you've decided on the {user_mains_choice} as your mains \n"
-      f"And finally for your dessert you have chosen {user_dessert_choice}")
+print(f"So you've gone for the {user_starters_choice} as your starter. \n"
+      f"Then you've decided on the {user_mains_choice} as your mains. \n"
+      f"And finally for your dessert you have chosen {user_dessert_choice}.")
 
 # level 2
 # Use at least one f-string
@@ -61,7 +61,7 @@ main_price = mains_dic_list[(customer_order_list[1])]
 dessert_price = desserts_dic_list[(customer_order_list[2])]
 user_bill = float(starter_price) + float(main_price) + float(dessert_price)
 
-print(f"Your bill comes to {user_bill}")
+print(f"Your bill comes to £{user_bill}")
 
 # level 4
 # Add more to this program. Recommended ways are: Only allow input that is within the list, Add quantities of order etc.
