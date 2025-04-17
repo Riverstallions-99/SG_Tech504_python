@@ -15,6 +15,7 @@ print(shopping_list[1])
 
 shopping_list.append("carrots")
 print(shopping_list)
+print(len(shopping_list))
 
 shopping_list.extend(["toffee", "coffee"])
 print(shopping_list)

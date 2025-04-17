@@ -14,12 +14,12 @@ print(f"Your starters choices are: {starters_list}")
 # Take an input for the user for their starter
 user_starters_choice = ""
 
-''' A long winded version but gives some user feedback as to why they're being asked again
-while starters_list.count(user_starters_choice) == 0: # while the starter choice is not listed in the list... ask for the starter
-    user_starters_choice = input("What would you like for your starter? ")
-    if user_starters_choice not in starters_list :
-        print("Please choose a valid option.")
-'''
+# A long winded version but gives some user feedback as to why they're being asked again
+#while starters_list.count(user_starters_choice) == 0: # while the starter choice is not listed in the list... ask for the starter
+#    user_starters_choice = input("What would you like for your starter? ")
+#    if user_starters_choice not in starters_list :
+#        print("Please choose a valid option.")
+
 
 while user_starters_choice not in starters_list:
     user_starters_choice = input("What would you like for your starter? ")
