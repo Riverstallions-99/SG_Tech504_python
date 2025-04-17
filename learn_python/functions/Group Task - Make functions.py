@@ -1,7 +1,7 @@
 input_string = "Hello again!"
 
-def print_something(input_string):
-    print(input_string)
+def print_something(input_string_argument):
+    print(input_string_argument)
 
 print_something(input_string)
 
@@ -43,7 +43,7 @@ print_every_number((1, 2, 2, 3, 3, 4, 5, 5))
 def print_something(input_string_new: str):
     print(input_string_new)
 
-def division(x:int=2, y:int=5) -> float:
+def division(x:int = 2, y:int = 5) -> float:
     return x / y
 
 a:int = 4
