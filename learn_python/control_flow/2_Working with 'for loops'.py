@@ -58,5 +58,5 @@ for num in list_data:
         print("less than 3")
     elif num == 3:
         print("I found three")
-    elif num > 3:
+    else:
         print("greater than 3")

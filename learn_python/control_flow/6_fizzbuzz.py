@@ -15,4 +15,3 @@ while i < 101:
     else:
         print(i)
     i += 1
-
