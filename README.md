@@ -1,3 +1,8 @@
-# Tech 504 Week 2 Learning
+# Tech 504 Learning
 
-Little change
+This project is where my Sparta Global training material will go.
+Topics covered:
+- Markdown
+- Python
+- Git
+- APIs
