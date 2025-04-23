@@ -25,7 +25,6 @@ servers_json = json.dumps(servers_dict, indent=4)
 print("JSON formatted data:")
 print(servers_json)
 
-
 # Write the JSON data to a file
 # Using json.dump which is useful for writing to json files specifically
 with open("servers.json", "w") as json_file:

@@ -28,11 +28,11 @@ if len(sys.argv) > 1:
         # "if not, output the JSON to the screen instead"
         else:
             print(converted_json_content)
-    # Failing if the file isn't found
+    # Condition: File not found
     else:
         print("ERROR: " + sys.argv[1] + " not found")
         exit(1)
-# No source file specified
+# Condition: No source file specified
 else:
     print("ERROR: No YAML file was specified")
     print("Usage: yaml_to_json.py <source_file.yaml> <target_file.json>")

@@ -20,6 +20,8 @@ def check_valid_yaml_file(file_to_validate) -> bool:
         print("ERROR: File '" + file_to_validate + "' not found")
         return False
 
+# ---
+
 def check_valid_yaml(yaml_string_to_validate) -> bool:
     try:
         yaml.safe_load(yaml_string_to_validate)
