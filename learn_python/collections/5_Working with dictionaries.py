@@ -28,7 +28,7 @@ print(student_1)
 
 
 # Second pass once removing redundant code (3 lines of code into 1)
-student_1["completed_lesson_names"] = (student_1['completed_lesson_names']).remove("data_types")
+# student_1["completed_lesson_names"] = (student_1['completed_lesson_names']).remove("data_types")
 # ^ Removes the "data_types" value from the list which is in the value for the key "completed_lesson_names"
 
 student_1['completed_lessons'] = int(len(student_1['completed_lesson_names']))
