@@ -3,7 +3,7 @@
 ### Questions
 - [On-prem vs the cloud?](#factors-to-decide-whether-something-is-in-the-cloud)
 - [4 types of cloud: private, public, hybrid, multi-cloud](#4-types-of-cloud)
-- [Types of cloud services: IaaS, SaaS, PaaS](#4-types-of-cloud)
+- [Types of cloud services: IaaS, SaaS, PaaS](#Types-of-services)
 - [Advantages & Disadvantages of cloud](#Advantages-and-Disadvantages)
 - [Market Share](#market-share)
 - [Which cloud provider is best?](#which-cloud-provider-is-best)
@@ -28,7 +28,10 @@ SRE - Site Reliability Engineer
   - Mix of on-prem and on public/private cloud
   - May be required to meet security compliance standards (e.g. store data on-prem)
 - Multi-cloud:
-  - A mix of cloud providers ( eg. Azure + AWS, GCP + )
+  - A mix of cloud providers ( eg. Azure + AWS, GCP + Azure)
+
+### Types of Services
+![img.png](img.png)
 
 ### Is cloud more secure than on-prem?
 - Depends on which services you intend to use, depends on how much responsibility you're giving to the provider.
@@ -74,7 +77,7 @@ first service - app engine
   1. Organisation (eg. Company)
   2. Folders (eg. Department X, Team A, Product 1)
   3. Projects (eg. Development Project)
-  4. Resources (e. IAM, )
+  4. Resources (eg. IAM, )
 
 ### Ways to access GCP
 - GUI called cloud console
