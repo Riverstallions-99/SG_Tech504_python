@@ -15,7 +15,7 @@ What is piping?
 - Piping is unidirectional, they move from left to right
 
 How is piping different to redirection using > or >>?
-- Piping takes output from one command into another, redirection takes the output and gives it to a file/script
+- Piping takes output (stdout) from one command into another, redirection takes the output and gives it to a file/script
 
 What character is used for piping?
 - `|`
@@ -78,8 +78,8 @@ How can we direct both output streams to a file in one command?
 ## Create and run Python Script
 On your GCP VM:
 
-Level 1
-Python script needs to accept an argument specify the website you want to get the HTML for & print it to the screen
-Install the requests package
-Level 2
-Do it with a venv
+#### Level 1
+Python script needs to accept an argument specify the website you want to get the HTML for & print it to the screen.
+Install the requests package.
+#### Level 2
+Do it with a venv.
