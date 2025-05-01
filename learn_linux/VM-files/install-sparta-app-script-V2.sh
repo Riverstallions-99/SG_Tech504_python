@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo Getting updates...
-sudo apt-get update 2>> ./install-errors.txt
+apt-get update 2>> ./install-errors.txt
 echo Retrieved updates successfully
 echo
 echo Upgrading packages...
@@ -15,12 +15,12 @@ echo nginx installed successfully
 echo
 
 echo Installing unzip package...
-sudo apt-get install unzip -y 2>> ./install-errors.txt
+apt-get install unzip 2>> ./install-errors.txt
 echo unzip installed successfully
 echo
 
 echo Downloading Sparta Test App from git repo...
-git clone https://github.com/Riverstallions-99/sparta-test-app-repo 2>> ./install-errors.txt
+git clone https://github.com/Riverstallions-99/sparta-test-app-repo 2>> ./in>
 echo Downloaded Sparta Test App successfully
 echo
 
@@ -32,7 +32,7 @@ echo Unzipped file successfully
 echo
 
 echo Downloading NodeJS 20
-bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -" 2>> ../install-errors.txt
+bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -" 2>> ../i>
 echo Downloaded NodeJS 20 successfully
 echo
 echo Installing NodeJS 20
@@ -43,10 +43,12 @@ echo
 cd app
 
 echo "Installing npm (NodeJS Package Manager)..."
-npm install -y 2>> ../install-errors.txt
+npm install 2>> ../install-errors.txt
 echo Installed npm successfully
 echo
 
 echo Starting in background...
-npm start & 2>> ../install-errors.txt
+npm start & 2>> ./install-errors.txt
+
+exit 0
 
