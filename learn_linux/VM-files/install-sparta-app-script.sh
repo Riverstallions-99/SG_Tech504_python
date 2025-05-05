@@ -1,4 +1,8 @@
 #!/bin/bash
+# Tested: 2025-05-01
+# Tested by: Becky
+# Tested on: GCP, Ubuntu 20.04 LTS
+# Result:
 
 echo Getting updates...
 sudo apt-get update 2>> ./install-errors.txt
@@ -30,7 +34,7 @@ echo Unzipped file successfully
 echo
 
 echo Downloading NodeJS 20
-sudo bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -" 2>>>
+sudo bash -c "curl -fsSL https://deb.nodesource.com/setup_20.x | bash -" 2>> ./install-errors.txt
 echo Downloaded NodeJS Version 20 successfully
 echo Installing NodeJS 20
 sudo apt-get install nodejs -y 2>> ./install-errors.txt
@@ -46,3 +50,4 @@ echo
 
 echo Starting npm...
 npm start 2>> ./install-errors.txt
+
