@@ -1,8 +1,8 @@
 #!/bin/bash
-# Tested: 2025-05-02
+# Tested: 2025-05-06
 # Tested by: Becky
 # Tested on: GCP, Ubuntu 20.04 LTS
-# Result: Runs successfully on fresh machine
+# Result: NO LONGER IN USE
 
 echo Getting updates...
 apt-get update 2>> ./install-errors.txt
@@ -19,7 +19,7 @@ echo Done.
 echo
 
 echo Installing pm2...
-sudo apt-get install pm2 -y 2>> ./install-errors.txt
+sudo npm install pm2 -y 2>> ./install-errors.txt
 echo Done.
 echo
 
