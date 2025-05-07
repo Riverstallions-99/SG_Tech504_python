@@ -2,7 +2,7 @@
 # Tested: 2025-05-01
 # Tested by: Becky
 # Tested on: GCP, Ubuntu 22.04 LTS
-# Result: Ran successfully on fresh VM
+# Result: Ran successfully on fresh VM and as a start up script for a fresh VM
 
 echo Updating...
 sudo apt-get update
