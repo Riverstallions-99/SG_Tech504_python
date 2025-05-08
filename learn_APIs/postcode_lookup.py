@@ -15,5 +15,5 @@ postcode_dictionary = json.loads(postcodes_req.text)
 
 for item in postcode_dictionary.get("result"):
     for sub_item in item.get("result"):
-        print(f"{sub_item}: {item.get("result").get(sub_item)}")
+        print(f"{sub_item}: {item.get('result').get(sub_item)}")
     print("\n")

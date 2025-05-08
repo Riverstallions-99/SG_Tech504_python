@@ -5,6 +5,9 @@
 # Result:
 
 cd /sparta-test-app-repo/app
+echo ------ Checking code... ------
+npm install
+echo
 
 echo ------ Changing Adding DB_HOST variable... ------
 export DB_HOST=mongodb://10.200.0.27:27017/posts
