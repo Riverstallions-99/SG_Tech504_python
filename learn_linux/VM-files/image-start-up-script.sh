@@ -5,7 +5,7 @@
 # Result:
 
 cd /sparta-test-app-repo/app
-echo ------ Checking code... ------
+echo ------ Running npm install... ------
 npm install
 echo
 
