@@ -6,9 +6,9 @@ random.seed()
 magic_number = 42
 num_guesses = 5
 user_guess = 0
-first_guess = True
-success = False
-print(magic_number)
+# first_guess = True
+# success = False
+# print(magic_number)
 
 while num_guesses >= 1:
     user_guess = input(f"Please choose a number from 1 to 100 inclusive (You have {num_guesses} guesses left): ")

@@ -43,7 +43,8 @@ for value in dict_data.values():
 print("\n")
 
 for value in dict_data.values():
-    for sub_value in value.values():
+    for sub_value in value
+- ￼￼Research changing file permissions￼￼￼￼￼￼￼￼  .values():
         print(sub_value)
 
 print("\n")
@@ -58,5 +59,5 @@ for num in list_data:
         print("less than 3")
     elif num == 3:
         print("I found three")
-    elif num > 3:
+    else:
         print("greater than 3")
