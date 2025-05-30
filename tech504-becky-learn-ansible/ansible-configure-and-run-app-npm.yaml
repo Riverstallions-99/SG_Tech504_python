@@ -1,0 +1,81 @@
+# starts with ---
+---
+# name of the play
+- name: install app dependencies and run app
+  # where to run this play
+  hosts: web
+  # get comprehensive facts on the host?
+  gather_facts: yes
+  # provide sudo access for the play?
+  become: true
+
+  # instructions in the play are the tasks
+  # task 1: install nginx on target node
+  tasks:
+  # apt update
+  - name: Update apt cache
+    apt:
+      update_cache: yes
+
+  # apt upgrade
+  - name: Upgrade all packages
+    apt:
+      upgrade: dist
+
+  # install curl
+  - name: Install Curl, unzip and nginx
+    apt:
+      pkg: 
+        - curl
+        - unzip
+        - nginx
+      state: present
+
+
+ # (TRY TO DO USING A MODULE!) curl NodeJS 20 repository
+  - name: Download NodeJS 20 repo
+    shell: curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+    args:
+      executable: /bin/bash
+
+  # install NodeJS
+  - name: Install NodeJS 20
+    apt:
+      name: nodejs
+      state: present
+
+  # copy app folder from Controller node, into Target node (could change this to be a git clone)
+  - name: Copy app zip from Controller node
+    copy:
+      src: /home/ubuntu/nodejs20-sparta-test-app.zip
+      dest: /home/ubuntu/
+
+  # unzip app 
+  - name: Unzip the app
+    unarchive:
+      src: /home/ubuntu/nodejs20-sparta-test-app.zip
+      dest: /home/ubuntu/
+    args:
+      # stops Ansible from trying to create a directory if unzip has already happened
+      creates: /home/ubuntu/app/
+
+  # Allow port 3000
+  - name: Allow port 3000 via TCP
+    ufw:
+      rule: allow
+      port: '3000'
+      proto: tcp
+
+  # in /app/sparta-test-app-repo: run 'npm install' then 'npm start'
+  - name: Install npm dependencies
+    community.general.npm:
+      path: /home/ubuntu/app/
+
+  # npm install, npm start
+  - name: Run app
+    become: false
+    command: npm start
+    args:
+      chdir: /home/ubuntu/app/
+...
+
